@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-const IconLogo = (props: SVGProps<SVGSVGElement>) => (
+const ImageLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg width={81} height={40} viewBox="0 0 81 40" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path fillRule="evenodd" clipRule="evenodd" d="M41.7704 18.0954H59.6285V0.206482H41.7704V18.0954Z" fill="#FF8000" />
     <path
@@ -80,4 +80,4 @@ const IconLogo = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default IconLogo;
+export default ImageLogo;

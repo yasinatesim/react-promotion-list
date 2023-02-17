@@ -2,12 +2,17 @@ import React from 'react';
 
 import Header from 'components/Header';
 
-const MobileLayout: React.FC = () => {
+type Props = {
+  children: React.ReactNode;
+};
 
+const MobileLayout: React.FC<Props> = ({ children }) => {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+
+      {children}
+    </>
   );
 };
 

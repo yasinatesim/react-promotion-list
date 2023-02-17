@@ -1,7 +1,6 @@
-// @ts-nocheck
-import axios, { AxiosRequestConfig, AxiosRequestHeaders } from 'axios';
+import axios, { AxiosRequestConfig } from 'axios';
 
-const getBaseHeaders = (headers: AxiosRequestHeaders = {}) => {
+const getBaseHeaders = (headers: any = {}) => {
   const authToken = localStorage.getItem('token');
 
   if (authToken) {
@@ -20,6 +19,8 @@ class Request {
   instance = axios.create({
     baseURL: process.env.REACT_APP_API_ROOT,
     headers: {
+      'X-Language-Id': 'TR',
+      'X-Country-Id': 'TR',
       ...getBaseHeaders(),
     },
   });

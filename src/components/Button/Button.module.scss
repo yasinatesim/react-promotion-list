@@ -1,0 +1,62 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+
+
+  // types
+  &.primary {
+    background-color: var(--color-code-blue-12);
+    border: 2px solid var(--color-code-blue-12);
+    color: var(--color-code-bw-11);
+
+    &:hover {
+      background-color: var(--color-code-bw-11);
+      color: var(--color-code-blue-12);
+    }
+
+    &:active,
+    &.active {
+      background-color: transparent;
+      color: var(--color-code-blue-12);
+    }
+
+    &.outline {
+      background-color: transparent;
+      border-width: 1px;
+      color: var(--color-code-blue);
+
+      &:hover,
+      &.active {
+        border-width: 2px;
+      }
+    }
+
+    .loading {
+      background-color: var(--color-code-blue);
+
+      span {
+        background-color: var(--color-code-bw);
+      }
+    }
+  }
+
+
+  // sizes
+  &.medium {
+    height: 48px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 120px;
+  }
+
+}

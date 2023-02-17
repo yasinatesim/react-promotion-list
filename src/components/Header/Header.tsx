@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { Logo } from 'assets/Icons';
+import { ImageLogo as Logo } from 'assets/Images';
+
+import Account from 'components/Account';
 
 import style from './Header.module.scss';
-import Account from 'components/Account';
 
 const Header: React.FC = () => {
   return (
