@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import MobileLayout from 'containers/MobileLayout';
 import { getTagList } from 'services/tag';
