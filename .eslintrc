@@ -10,22 +10,52 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "simple-import-sort/imports": [
+    "import/order": [
       "error",
       {
-        "groups": [
-          ["^react"],
-          ["^@?\\w"],
-          ["^(@/assets/icons)(/.*|$)"],
-          ["^(@/data)(/.*|$)"],
-          ["^(@/hooks)(/.*|$)"],
-          ["^(@/store)(/.*|$)"],
-          ["^(@/components)(/.*|$)"],
-          ["^\\u0000"],
-          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
-          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
-          ["^.+\\.?(scss)$"]
-        ]
+        "groups": ["external", ["builtin", "internal", "unknown", "parent", "sibling", "index", "object", "type"]],
+        "pathGroupsExcludedImportTypes": [],
+        "pathGroups": [
+          {
+            "pattern": "containers/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "components/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "constants/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "services/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "types/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "hooks/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "hooks",
+            "group": "external",
+            "position": "after"
+          }
+        ],
+        "alphabetize": {
+          "order": "asc"
+        },
+        "newlines-between": "always-and-inside-groups"
       }
     ],
     "import/prefer-default-export": ["off"],
@@ -83,5 +113,13 @@
     "func-names": ["off"],
     "no-console": ["off"],
     "promise/catch-or-return": "error"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.stories.*"],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ]
 }
