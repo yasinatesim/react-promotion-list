@@ -1,38 +1,35 @@
 // @ts-nocheck
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import DetailLayout from 'containers/DetailLayout';
 
-import {getPromotionDetailService} from 'services/promotion';
-
+import { getPromotionDetailService } from 'services/promotion';
+import useCardTitle from 'hooks/useCardTitle';
 
 const Detail: React.FC = () => {
-  const params = useParams()
-  console.log("params:", params)
+  const params = useParams();
+  const [data, setData] = useState({});
+  const { handleFullFilledTitle } = useCardTitle();
 
   useEffect(() => {
-
-    const fetchData = async () =>{
-
+    const fetchData = async () => {
       if (params.id) {
-        const response = await getPromotionDetailService({id: params.id});
-        console.log("response:", response)
+        const response = await getPromotionDetailService({ id: params.id });
+        console.log('response:', response);
+        setData(response);
       }
-
-    }
+    };
 
     fetchData();
-
-  }, [])
-
-
+  }, []);
 
   return (
     <DetailLayout>
-      <div>
-      Detail page
-      </div>
+      <img src={data.ImageUrl} alt="" />
+      {data.Title && handleFullFilledTitle(data.Title) && (
+        <div className={style.title} dangerouslySetInnerHTML={{ __html: data.Title }} />
+      )}
     </DetailLayout>
   );
 };
