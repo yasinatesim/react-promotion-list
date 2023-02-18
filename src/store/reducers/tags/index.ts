@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { getTagList as getTagListService } from 'services/tag';
+import { getTagListService } from 'services/tag';
 
 import { getTagListAction } from './actions'
 import initialState from './initialState'

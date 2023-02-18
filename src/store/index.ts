@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 
-import tags from './tags'
+import tags from './reducers/tags'
 
 export const store = configureStore({
     reducer: {

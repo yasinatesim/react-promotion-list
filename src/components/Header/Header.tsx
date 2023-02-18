@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     <div className={style.container}>
       <Logo />
 
-      <div>
+      <div className={style.account}>
         <Account />
       </div>
     </div>

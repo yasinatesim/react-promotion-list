@@ -1,18 +1,25 @@
 import React from 'react';
 
+import { IconUser } from 'assets/Icons';
+
 import Button from 'components/Button';
 
 import style from './Account.module.scss';
-import { IconUser } from 'assets/Icons';
 
 const Header: React.FC = () => {
   return (
     <div className={style.container}>
-      <Button type="primary" size="large">
+      <Button type="primary">
         Giriş Yap
       </Button>
 
-      <Button >
+      <Button
+        classnames={{
+          container: style.user,
+        }}
+        type="secondary"
+        shape='circle'
+      >
         <IconUser />
       </Button>
     </div>

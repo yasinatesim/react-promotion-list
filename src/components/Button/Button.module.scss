@@ -9,54 +9,36 @@
   overflow: hidden;
   position: relative;
   margin: 0;
-
+  border-radius: 40px;
 
   // types
   &.primary {
-    background-color: var(--color-code-blue-12);
-    border: 2px solid var(--color-code-blue-12);
-    color: var(--color-code-bw-11);
-
-    &:hover {
-      background-color: var(--color-code-bw-11);
-      color: var(--color-code-blue-12);
-    }
-
-    &:active,
-    &.active {
-      background-color: transparent;
-      color: var(--color-code-blue-12);
-    }
-
-    &.outline {
-      background-color: transparent;
-      border-width: 1px;
-      color: var(--color-code-blue);
-
-      &:hover,
-      &.active {
-        border-width: 2px;
-      }
-    }
-
-    .loading {
-      background-color: var(--color-code-blue);
-
-      span {
-        background-color: var(--color-code-bw);
-      }
-    }
+    background: var(--color-code-red);
+    color: var(--color-code-white);
   }
 
+  &.secondary {
+    background: var(--color-code-black);
+    color: var(--color-code-white);
+  }
 
   // sizes
   &.medium {
-    height: 48px;
-    font-size: 18px;
-    line-height: 24px;
-    padding-left: 20px;
-    padding-right: 20px;
-    min-width: 120px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 13px;
+    min-width: 91px;
   }
 
+  // shapes
+  &.circle {
+    min-width: auto;
+    border-radius: 50%;
+
+    &.medium {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }

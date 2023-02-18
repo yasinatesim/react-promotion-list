@@ -5,14 +5,14 @@ import css from './Button.module.scss'
 
 type Classnames = {
   container?: string
-  loading?: string
 }
 
 type Props = {
   classnames?: Classnames
   htmlType?: 'button' | 'submit' | 'reset' | undefined
-  size?: 'large'
-  type?: 'primary'
+  size?: 'medium'
+  shape?: 'circle'
+  type?: 'primary' | 'secondary'
   width?: number
 }
 
@@ -21,8 +21,9 @@ const Button: React.FC<
 > = ({
   children,
   classnames,
-  size = 'large',
+  size = 'medium',
   style,
+  shape,
   type = 'primary',
   htmlType = 'button',
   width,
@@ -33,6 +34,7 @@ const Button: React.FC<
       css.container,
       css[type],
       css[size],
+      shape && css[shape],
       classnames?.container
     )
   }

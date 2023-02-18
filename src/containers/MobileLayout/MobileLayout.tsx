@@ -8,11 +8,11 @@ type Props = {
 
 const MobileLayout: React.FC<Props> = ({ children }) => {
   return (
-    <>
+    <div>
       <Header />
 
       {children}
-    </>
+    </div>
   );
 };
 
