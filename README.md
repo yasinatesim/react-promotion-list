@@ -1,46 +1,147 @@
-# Getting Started with Create React App
+<h3 align="center">
+  <br>
+  <a href="https://github.com/yasinatesim/react-link-list"><img src="https://yasinates.com/tech/react.svg" alt="React Promotion List App" width="200"></a>
+  <br>
+  React Promotion App
+  <br>
+</h3>
+<hr>
+<p align="center">This project was created to create a medium/large React project with React + CSS Module, React Router, Redux and Docker 😎</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <p align="center">
+    · <a href="https://react-promotion-list.yasinatesim.vercel.app/">View Demo</a>
+  </p>
+</p>
 
-## Available Scripts
+## 📖 About
 
-In the project directory, you can run:
+This project was created to create a medium/large React project with React + CSS Module, React Router, Redux and Docker 😎
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 📚Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<table>
+<tr>
+<td>
+<a  href="https://github.com/airbnb/javascript">Airbnb</a>
+</td>
+<td>Which is often a reasonable approach to JavaScript</td>
+</tr>
+<tr>
+<td>
+<a  href="https://reactjs.org/">React Js</a>
+</td>
+<td>A JavaScript library for building user interfaces</td>
+</tr>
 
-### `npm test`
+<tr>
+<td>
+<a  href="https://reactrouter.com/">React Router</a>
+</td>
+<td>Components are the heart of React's powerful, declarative programming model.</td>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/conventional-changelog/commitlint">Commitlint</a>
+</td>
+<td>Send commit messages to <a  href="https://www.conventionalcommits.org/en/v1.0.0/">conventional commits</a> rules</td>
+</tr>
+<tr>
+<td>
+<a href="https://sass-lang.com/](https://sass-lang.com/">SASS</a>
+</td>
+<td>The most mature, stable, and powerful professional grade CSS extension language in the world</td>
+</tr>
+<tr>
+<td>
+<a  href="https://editorconfig.org/">Editorconfig</a>
+</td>
+<td>Helps maintain consistent coding styles for my working on the same project across various editors and IDEs</td>
+</tr>
+<tr>
+<td>
+<a  href="https://eslint.org/">Eslint</a>
+</td>
+<td>Find and fix problems in your JavaScript code</td>
+</tr>
+<tr>
+<td>
+<a  href="https://prettier.io/">Prettier</a>
+</td>
+<td>An opinionated code formatter</td>
+</tr>
+</table>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### 📦 Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node (v12.0.0+)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Npm (v6.00+)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ⚙️ How To Use
 
-### `npm run eject`
+ 1. Clone this repository
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git clone https://github.com/yasinatesim/react-promotion-list.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Change the directory
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+cd react-promotion-list
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ 3. Install the project dependencies
 
-## Learn More
+```bash
+yarn install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Develop awesome things
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn start
+```
+
+### For Docker
+
+2. Change the directory
+
+```bash
+cd react-promotion-list
+```
+
+3. Run this command **without `yarn` or `yarn install`**
+
+```bash
+yarn setup
+```
+
+or
+
+```bash
+yarn && docker-compose up --build
+```
+
+App is running to  [http://localhost:3000/](http://localhost:3000/)
+
+**For Production Build**
+```bash
+yarn build
+```
+
+**For Lint**
+```bash
+yarn lint
+```
+
+## 🔑 License
+* Copyright © 2023 - MIT License.
+See `LICENSE` for more information.
+
+---
+
+_This README was generated with by [markdown-manager](https://github.com/yasinatesim/markdown-manager)_ 🥲
