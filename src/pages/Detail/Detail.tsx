@@ -6,11 +6,11 @@ import DetailLayout from 'containers/DetailLayout';
 
 import { getPromotionDetailService } from 'services/promotion';
 import useCardTitle from 'hooks/useCardTitle';
+import { handleFullFilledTitle } from 'helpers/text';
 
 const Detail: React.FC = () => {
   const params = useParams();
   const [data, setData] = useState({});
-  const { handleFullFilledTitle } = useCardTitle();
 
   useEffect(() => {
     const fetchData = async () => {
