@@ -4,7 +4,7 @@ import { getTagListService } from 'services/tag';
 import { getTagListAction } from './actions'
 import initialState from './initialState'
 
-export const tagSlice = createSlice({
+export const tagsSlice = createSlice({
     initialState,
     name: 'tags',
     reducers: {
@@ -22,6 +22,6 @@ export const getTags = () => async (dispatch: Function) => {
 };
 
 
-export const { getTagList } = tagSlice.actions
+export const { getTagList } = tagsSlice.actions
 
-export default tagSlice.reducer
+export default tagsSlice.reducer

@@ -6,7 +6,7 @@ import Button from 'components/Button';
 
 import style from './Account.module.scss';
 
-const Header: React.FC = () => {
+const Account: React.FC = () => {
   return (
     <div className={style.container}>
       <Button type="primary">
@@ -26,4 +26,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default Account;

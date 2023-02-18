@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 
 import tags from './reducers/tags'
+import promotions from './reducers/promotions'
 
 export const store = configureStore({
     reducer: {
-        tags,
+    tags,
+    promotions,
     },
 })
 

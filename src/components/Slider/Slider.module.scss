@@ -1,3 +1,48 @@
 .container {
   margin-top: 20px;
+
+  :global(.swiper) {
+    height: 378px;
+  }
+
+  :global(.swiper-slide) {
+     width: initial;
+    height: initial;
+  }
+}
+
+.sliderItem {
+  background: var(--color-code-white);
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px;
+  position: relative;
+  text-decoration: none;
+  width: 305px;
+}
+
+.sliderImageWrapper {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 100%;
+}
+
+.slideImage {    border-radius: 18px;
+  border-bottom-left-radius: 80px;
+  height: auto;
+  max-height: 59vw;
+  object-fit: cover;
+  width: 100%;
+}
+
+.slideCardColor {
+  border-radius: 50px 50px 0 0;
+  bottom: -2.5vh;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: -1;
 }
