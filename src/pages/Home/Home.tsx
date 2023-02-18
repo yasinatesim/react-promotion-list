@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+
 
 import MobileLayout from 'containers/MobileLayout';
-import { getTagList } from 'services/tag';
+
 import Button from 'components/Button';
+import { useDispatch } from 'react-redux';
+import { getTags } from 'store/tags';
 
 const Home: React.FC = () => {
-  const fetchData = async () => {
+  const dispatch = useDispatch()
 
-    const d = await getTagList()
-
-    console.log(d)
-  }
+  useEffect(() => {
+    dispatch(getTags() as any)
+  }, [])
 
 
 
   return (
     <MobileLayout>
-      <Button onClick={fetchData}>Fetch Data</Button>
+      deneme
     </MobileLayout>
   );
 };
