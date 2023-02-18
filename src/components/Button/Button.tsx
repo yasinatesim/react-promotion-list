@@ -13,7 +13,7 @@ type Props = {
   size?: 'medium'
   shape?: 'circle'
   type?: 'primary' | 'secondary'
-  width?: number
+  width?: number | string
 }
 
 const Button: React.FC<

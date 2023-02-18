@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 
-
-
 import MobileLayout from 'containers/MobileLayout';
 
 import { useDispatch } from 'react-redux';

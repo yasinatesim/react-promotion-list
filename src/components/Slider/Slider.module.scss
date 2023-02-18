@@ -1,13 +1,14 @@
 .container {
   margin-top: 20px;
+  margin-left: 36px;
 
   :global(.swiper) {
-    height: 378px;
+    height: 393px;
   }
 
   :global(.swiper-slide) {
-     width: initial;
-    height: initial;
+    width: initial;
+    min-height: 393px;
   }
 }
 
@@ -20,6 +21,7 @@
   position: relative;
   text-decoration: none;
   width: 305px;
+  min-height: 370px;
 }
 
 .sliderImageWrapper {
@@ -30,12 +32,30 @@
   width: 100%;
 }
 
-.slideImage {    border-radius: 18px;
+.slideImage {
+  border-radius: 18px;
   border-bottom-left-radius: 80px;
   height: auto;
   max-height: 59vw;
   object-fit: cover;
   width: 100%;
+}
+
+.fullImage {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 100%;
+
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  border-bottom-left-radius: 70px;
+  display: flex;
+  justify-content: center;
+  height: 360px;
 }
 
 .slideCardColor {
@@ -45,4 +65,17 @@
   right: 0;
   width: 100%;
   z-index: -1;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px auto;
+  width: 245px;
 }
