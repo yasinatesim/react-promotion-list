@@ -11,21 +11,34 @@ type Props = {
   name?: string;
   date?: string | null;
   radius?: number;
+  isBackgroundImage?: boolean;
 };
 
-const Image: React.FC<Props> = ({ source, color, icon, radius = 100, name = null, date = null }) => {
+const Image: React.FC<Props> = ({
+  source,
+  color,
+  icon,
+  radius = 100,
+  name = null,
+  date = null,
+  isBackgroundImage = false,
+}) => {
   const formattedDate = (date && useTimeAgo(date)) || null;
 
   return (
     <div className={style.container}>
-      <img
-        className={style.image}
-        src={source}
-        alt={name || source}
-        style={{
-          borderBottomLeftRadius: radius,
-        }}
-      />
+      {isBackgroundImage ? (
+        <div className={style.fullImage} style={{ backgroundImage: `url(${source})` }} />
+      ) : (
+        <img
+          className={style.image}
+          src={source}
+          alt={name || source}
+          style={{
+            borderBottomLeftRadius: radius,
+          }}
+        />
+      )}
 
       {formattedDate && <div className={style.date}>{formattedDate}</div>}
 

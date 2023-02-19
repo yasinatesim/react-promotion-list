@@ -43,39 +43,7 @@
 }
 
 
-.sliderImageWrapper {
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  width: 100%;
-}
 
-.slideImage {
-  border-radius: 18px;
-  border-bottom-left-radius: 80px;
-  height: auto;
-  max-height: 59vw;
-  object-fit: cover;
-  width: 100%;
-}
-
-.fullImage {
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  width: 100%;
-
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 20px;
-  border-bottom-left-radius: 70px;
-  display: flex;
-  justify-content: center;
-  height: 80vw;
-}
 
 .slideCardColor {
   width: 97%;

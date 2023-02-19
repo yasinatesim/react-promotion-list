@@ -21,6 +21,25 @@
 .image {
   height: auto;
   width: 100%;
+  object-fit: cover;
+  max-height: 59vw;
+}
+
+.fullImage {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 100%;
+
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  border-bottom-left-radius: 70px;
+  display: flex;
+  justify-content: center;
+  height: 80vw;
 }
 
 .date {

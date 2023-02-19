@@ -5,7 +5,6 @@ import tr from 'javascript-time-ago/locale/tr.json';
 TimeAgo.addDefaultLocale(tr);
 
 const useTimeAgo = (date: string) => {
-  console.log("date:", date)
   const timeAgo = new TimeAgo('tr');
 
   const regex = /[0-9]{2}\.[0-9]{2}\.[0-9]{4}/g;

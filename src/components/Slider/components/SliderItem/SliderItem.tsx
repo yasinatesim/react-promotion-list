@@ -16,18 +16,15 @@ const SliderItem: React.FC<Props> = ({ data }) => {
   return (
     <Link to={`/campaign/${data.SeoName}/${data.Id}`} className={style.container}>
       <div className={style.sliderImageWrapper}>
-        {handleFullFilledTitle(data.Title) ? (
-          <Image
-            source={data.ImageUrl}
-            color={data.BrandIconColor}
-            icon={data.BrandIconUrl}
-            name={data.SeoName}
-            date={data.RemainingText}
-            radius={80}
-          />
-        ) : (
-          <div className={style.fullImage} style={{ backgroundImage: `url(${data.ImageUrl})` }} />
-        )}
+        <Image
+          source={data.ImageUrl}
+          color={data.BrandIconColor}
+          icon={data.BrandIconUrl}
+          name={data.SeoName}
+          date={data.RemainingText}
+          radius={80}
+          isBackgroundImage={!handleFullFilledTitle(data.Title)}
+        />
       </div>
 
       {handleFullFilledTitle(data.Title) && (
