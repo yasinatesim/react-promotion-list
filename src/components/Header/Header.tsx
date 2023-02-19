@@ -3,14 +3,14 @@ import React from 'react';
 
 import Account from 'components/Account';
 
-import style from './Header.module.scss';
+import css from './Header.module.scss';
 
 const Header: React.FC = () => {
   return (
-    <div className={style.container}>
+    <div className={css.container}>
       <Logo />
 
-      <div className={style.account}>
+      <div className={css.account}>
         <Account />
       </div>
     </div>

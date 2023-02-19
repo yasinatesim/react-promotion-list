@@ -10,12 +10,11 @@
   min-width: 70vw;
   text-decoration: none;
 
-
   :global(.swiper) {
     overflow: initial;
   }
 
-  :global(.swiper-container){
+  :global(.swiper-container) {
     width: 100%;
   }
   :global(.swiper-wrapper) {
@@ -41,9 +40,6 @@
     width: 19px;
   }
 }
-
-
-
 
 .slideCardColor {
   width: 97%;

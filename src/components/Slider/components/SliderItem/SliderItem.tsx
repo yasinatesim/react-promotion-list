@@ -7,7 +7,7 @@ import { Promotion } from 'types/models';
 
 import { useText } from 'hooks';
 
-import style from './SliderItem.module.scss';
+import css from './SliderItem.module.scss';
 
 type Props = {
   data: Promotion;
@@ -17,28 +17,31 @@ const SliderItem: React.FC<Props> = ({ data }) => {
   const { handleFullFilledTitle } = useText();
 
   return (
-    <Link to={`/campaign/${data.SeoName}/${data.Id}`} className={style.container}>
-      <div className={style.sliderImageWrapper}>
+    <Link to={`/campaign/${data.SeoName}/${data.Id}`} className={css.container}>
+      <div className={css.sliderImageWrapper}>
         <Image
           source={data.ImageUrl}
           color={data.BrandIconColor}
           icon={data.BrandIconUrl}
           name={data.SeoName}
           date={data.RemainingText}
-          radius={80}
+          style={{
+            borderRadius: 20,
+            borderBottomLeftRadius: 80,
+          }}
           isBackgroundImage={!handleFullFilledTitle(data.Title)}
         />
       </div>
 
       {handleFullFilledTitle(data.Title) && (
-        <div className={style.title} dangerouslySetInnerHTML={{ __html: data.Title }} />
+        <div className={css.title} dangerouslySetInnerHTML={{ __html: data.Title }} />
       )}
 
-      <div className={style.slideCardColor} style={{ backgroundColor: data.PromotionCardColor }} />
+      <div className={css.slideCardColor} style={{ backgroundColor: data.PromotionCardColor }} />
 
       {handleFullFilledTitle(data.Title) && (
         <div
-          className={style.promotionText}
+          className={css.promotionText}
           dangerouslySetInnerHTML={{ __html: data.BrandPromotionCardParticipationText }}
         />
       )}

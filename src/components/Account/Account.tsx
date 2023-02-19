@@ -3,16 +3,16 @@ import React from 'react';
 
 import Button from 'components/Button';
 
-import style from './Account.module.scss';
+import css from './Account.module.scss';
 
 const Account: React.FC = () => {
   return (
-    <div className={style.container}>
+    <div className={css.container}>
       <Button type="primary">Giriş Yap</Button>
 
       <Button
         classnames={{
-          container: style.user,
+          container: css.user,
         }}
         type="secondary"
         shape="circle"
