@@ -14,7 +14,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     dispatch(getTags() as any);
-    dispatch(getPromotions() as any);
+    dispatch(getPromotions({ tagId: null }) as any);
   }, []);
 
   return (

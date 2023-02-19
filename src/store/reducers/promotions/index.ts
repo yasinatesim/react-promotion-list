@@ -13,14 +13,17 @@ export const promotionsSlice = createSlice({
   },
 });
 
-export const getPromotions = () => async (dispatch: Function) => {
-  try {
-    const response = await getPromotionListService();
-    dispatch(getPromotionList(response));
-  } catch (err) {
-    throw new Error(err as string);
-  }
-};
+export const getPromotions =
+  ({ tagId }: { tagId: string | null }) =>
+  async (dispatch: Function) => {
+    try {
+      const response = await getPromotionListService({ tagId: tagId || null });
+      console.log("response:", response)
+      dispatch(getPromotionList(response));
+    } catch (err) {
+      throw new Error(err as string);
+    }
+  };
 
 export const { getPromotionList } = promotionsSlice.actions;
 
