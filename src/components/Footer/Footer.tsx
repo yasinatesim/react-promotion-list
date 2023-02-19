@@ -2,18 +2,18 @@ import { IconDiscover, IconPortal } from 'assets/Icons';
 
 import React from 'react';
 
-import style from './Footer.module.scss';
+import css from './Footer.module.scss';
 
 const Footer: React.FC = () => {
   return (
-    <div className={style.container}>
-      <div className={style.inner}>
-        <a href="#" className={style.active}>
+    <div className={css.container}>
+      <div className={css.inner}>
+        <a href="#" className={css.active}>
           <IconDiscover />
           <span>KEŞFET</span>
         </a>
 
-        <button className={style.portal}>
+        <button className={css.portal}>
           <IconPortal />
         </button>
 

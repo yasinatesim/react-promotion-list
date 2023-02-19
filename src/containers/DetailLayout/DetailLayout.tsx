@@ -4,7 +4,7 @@ import Button from 'components/Button';
 
 import { Detail } from 'types/models';
 
-import style from './DetailLayout.module.scss';
+import css from './DetailLayout.module.scss';
 
 type Props = {
   children: React.ReactNode;
@@ -13,10 +13,10 @@ type Props = {
 
 const DetailLayout: React.FC<Props> = ({ pageDetails, children }) => {
   return (
-    <div className={style.container}>
+    <div className={css.container}>
       {children}
 
-      <div className={style.footer}>
+      <div className={css.footer}>
         <Button width="100%" size="large">
           {pageDetails.DetailButtonText}
         </Button>

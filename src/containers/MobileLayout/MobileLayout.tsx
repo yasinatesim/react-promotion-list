@@ -5,7 +5,7 @@ import Header from 'components/Header';
 
 import Loader from 'components/Loader';
 
-import style from './MobileLayout.module.scss';
+import css from './MobileLayout.module.scss';
 
 type Props = {
   children: React.ReactNode;
@@ -13,12 +13,12 @@ type Props = {
 
 const MobileLayout: React.FC<Props> = ({ children }) => {
   return (
-    <div className={style.container}>
+    <div className={css.container}>
       <Loader />
 
       <Header />
 
-      <div className={style.content}>{children}</div>
+      <div className={css.content}>{children}</div>
 
       <Footer />
     </div>

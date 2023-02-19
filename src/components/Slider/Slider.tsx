@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import style from './Slider.module.scss';
+import css from './Slider.module.scss';
 
 import SliderItem from './components/SliderItem';
 
@@ -38,7 +38,7 @@ const Slider: React.FC = () => {
   }, [promotions]);
 
   return (
-    <div className={style.container}>
+    <div className={css.container}>
       <Swiper
         id="slider"
         slidesPerView="auto"
@@ -49,7 +49,7 @@ const Slider: React.FC = () => {
           clickable: true,
         }}
         modules={[Pagination]}
-        className={style.slider}
+        className={css.slider}
         onSlideChange={(swiper) => {
           handleChangePaginationColor({ activeIndex: swiper.activeIndex });
         }}

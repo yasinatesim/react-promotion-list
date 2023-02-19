@@ -8,7 +8,7 @@ import { ALL_TAG_ID } from 'store/reducers/tags/constants';
 
 import { Tag } from 'types/models';
 
-import style from './TagList.module.scss';
+import css from './TagList.module.scss';
 import TagListItem from './TagListItem';
 
 const TagList: React.FC = () => {
@@ -50,7 +50,7 @@ const TagList: React.FC = () => {
   };
 
   return (
-    <div className={style.container}>
+    <div className={css.container}>
       {tags.map((tag: Tag, index: number) => (
         <div onClick={() => handleClickTag(tag.Id)} key={`${tag.Id}_${index}`}>
           <TagListItem tag={tag} />

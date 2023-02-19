@@ -16,7 +16,7 @@ import { Detail as DetailType } from 'types/models';
 
 import { useText } from 'hooks';
 
-import style from './Detail.module.scss';
+import css from './Detail.module.scss';
 
 const Detail: React.FC = () => {
   const params: { id: string; seoName: string } = useParams();
@@ -52,7 +52,7 @@ const Detail: React.FC = () => {
         type="secondary"
         shape="circle"
         classnames={{
-          container: style.backButton,
+          container: css.backButton,
         }}
       >
         <Link to="/">
@@ -66,16 +66,17 @@ const Detail: React.FC = () => {
         icon={data.BrandIconUrl}
         name={data.SeoName}
         date={data.EndDate}
+        style={{
+          borderBottomLeftRadius: 100,
+        }}
       />
 
-      <div className={style.content}>
+      <div className={css.content}>
         {data.Title && handleFullFilledTitle(data.Title) && (
-          <div className={style.title} dangerouslySetInnerHTML={{ __html: data.Title }} />
+          <div className={css.title} dangerouslySetInnerHTML={{ __html: data.Title }} />
         )}
 
-        {data.Description && (
-          <div className={style.description} dangerouslySetInnerHTML={{ __html: data.Description }} />
-        )}
+        {data.Description && <div className={css.description} dangerouslySetInnerHTML={{ __html: data.Description }} />}
       </div>
     </DetailLayout>
   );

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import style from './Loader.module.scss';
+import css from './Loader.module.scss';
 
 const Loader: React.FC = () => {
   return (
-    <div className={style.container} id="loader">
-      <div className={style.spin} />
+    <div className={css.container} id="loader">
+      <div className={css.spin} />
     </div>
   );
 };

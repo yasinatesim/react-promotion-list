@@ -2,7 +2,7 @@ import React from 'react';
 
 import useTimeAgo from 'hooks/useTimeAgo';
 
-import style from './Image.module.scss';
+import css from './Image.module.scss';
 
 type Props = {
   source: string;
@@ -10,7 +10,7 @@ type Props = {
   icon: string;
   name?: string;
   date?: string | null;
-  radius?: number;
+  style?: any;
   isBackgroundImage?: boolean;
 };
 
@@ -18,31 +18,31 @@ const Image: React.FC<Props> = ({
   source,
   color,
   icon,
-  radius = 100,
   name = null,
   date = null,
+  style,
   isBackgroundImage = false,
 }) => {
   const formattedDate = (date && useTimeAgo(date)) || null;
 
   return (
-    <div className={style.container}>
+    <div className={css.container}>
       {isBackgroundImage ? (
-        <div className={style.fullImage} style={{ backgroundImage: `url(${source})` }} />
+        <div className={css.fullImage} style={{ backgroundImage: `url(${source})`, ...style }} />
       ) : (
         <img
-          className={style.image}
+          className={css.image}
           src={source}
           alt={name || source}
           style={{
-            borderBottomLeftRadius: radius,
+            ...style,
           }}
         />
       )}
 
-      {formattedDate && <div className={style.date}>{formattedDate}</div>}
+      {formattedDate && <div className={css.date}>{formattedDate}</div>}
 
-      <div className={style.brandImage} style={{ backgroundColor: color }}>
+      <div className={css.brandImage} style={{ backgroundColor: color }}>
         <img src={icon} alt={name || source} />
       </div>
     </div>
