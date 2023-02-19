@@ -1,26 +1,36 @@
 import React from 'react';
 
-import { Detail } from 'types/models';
-
 import useTimeAgo from 'hooks/useTimeAgo';
 
 import style from './Image.module.scss';
 
 type Props = {
-  data: Detail;
+  source: string;
+  color: string;
+  icon: string;
+  name?: string;
+  date?: string | null;
+  radius?: number;
 };
 
-const Image: React.FC<Props> = ({ data }) => {
-  const date = useTimeAgo(data.EndDate);
+const Image: React.FC<Props> = ({ source, color, icon, radius = 100, name = null, date = null }) => {
+  const formattedDate = (date && useTimeAgo(date)) || null;
 
   return (
     <div className={style.container}>
-      <img className={style.image} src={data.ImageUrl} alt={data.SeoName} />
+      <img
+        className={style.image}
+        src={source}
+        alt={name || source}
+        style={{
+          borderBottomLeftRadius: radius,
+        }}
+      />
 
-      <div className={style.date}>{date}</div>
+      {formattedDate && <div className={style.date}>{formattedDate}</div>}
 
-      <div className={style.brandImage} style={{ backgroundColor: data.BrandIconColor }}>
-        <img src={data.BrandIconUrl} alt={data.SeoName} />
+      <div className={style.brandImage} style={{ backgroundColor: color }}>
+        <img src={icon} alt={name || source} />
       </div>
     </div>
   );

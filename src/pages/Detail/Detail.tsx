@@ -58,7 +58,13 @@ const Detail: React.FC = () => {
         </Link>
       </Button>
 
-      <Image data={data} />
+      <Image
+        source={data.ImageUrl}
+        color={data.BrandIconColor}
+        icon={data.BrandIconUrl}
+        name={data.SeoName}
+        date={data.EndDate}
+      />
 
       <div className={style.content}>
         {data.Title && handleFullFilledTitle(data.Title) && (

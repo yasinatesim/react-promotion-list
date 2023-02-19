@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Footer from 'components/Footer';
 import Header from 'components/Header';
 
 import style from './MobileLayout.module.scss';
@@ -13,7 +14,9 @@ const MobileLayout: React.FC<Props> = ({ children }) => {
     <div className={style.container}>
       <Header />
 
-      {children}
+      <div className={style.content}>{children}</div>
+
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,15 @@
 .container {
-  margin-top: 20px;
+  background: var(--color-code-white);
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: block;
+  padding: 5px;
+  position: relative;
+  text-decoration: none;
+  width: 70vw;
+  min-width: 70vw;
+  text-decoration: none;
+
 
   :global(.swiper) {
     overflow: initial;
@@ -32,18 +42,6 @@
   }
 }
 
-.sliderItem {
-  background: var(--color-code-white);
-  border-radius: 20px;
-  box-sizing: border-box;
-  display: block;
-  padding: 5px;
-  position: relative;
-  text-decoration: none;
-  width: 70vw;
-  min-width: 70vw;
-  text-decoration: none;
-}
 
 .sliderImageWrapper {
   background-position: 50%;

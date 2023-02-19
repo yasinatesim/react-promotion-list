@@ -1,6 +1,10 @@
 .container {
   background-color: var(--color-code-gray);
-  width: 100vw;
+}
+
+.content {
+  display: block;
+  overflow: auto;
   height: 100vh;
 }
 

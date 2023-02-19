@@ -1,6 +1,4 @@
-import { handleFullFilledTitle } from 'helpers/text';
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import usePromotions from 'store/hooks/usePromotions';
 
@@ -12,6 +10,8 @@ import 'swiper/css/pagination';
 
 import style from './Slider.module.scss';
 
+import SliderItem from './components/SliderItem';
+
 const Slider: React.FC = () => {
   const promotions = usePromotions();
 
@@ -19,6 +19,7 @@ const Slider: React.FC = () => {
     <div className={style.container}>
       <Swiper
         slidesPerView="auto"
+        autoHeight
         spaceBetween={10}
         pagination={{
           clickable: true,
@@ -28,28 +29,7 @@ const Slider: React.FC = () => {
       >
         {promotions.map((promotion) => (
           <SwiperSlide key={promotion.Id}>
-            <Link to={`/campaign/${promotion.SeoName}/${promotion.Id}`} className={style.sliderItem}>
-              <div className={style.sliderImageWrapper}>
-                {handleFullFilledTitle(promotion.Title) ? (
-                  <img src={promotion.ImageUrl} alt={promotion.SeoName} className={style.slideImage} />
-                ) : (
-                  <div className={style.fullImage} style={{ backgroundImage: `url(${promotion.ImageUrl})` }} />
-                )}
-              </div>
-
-              {handleFullFilledTitle(promotion.Title) && (
-                <div className={style.title} dangerouslySetInnerHTML={{ __html: promotion.Title }} />
-              )}
-
-              <div className={style.slideCardColor} style={{ backgroundColor: promotion.PromotionCardColor }} />
-
-              {handleFullFilledTitle(promotion.Title) && (
-                <div
-                  className={style.promotionText}
-                  dangerouslySetInnerHTML={{ __html: promotion.BrandPromotionCardParticipationText }}
-                />
-              )}
-            </Link>
+            <SliderItem data={promotion} />
           </SwiperSlide>
         ))}
       </Swiper>

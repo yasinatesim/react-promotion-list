@@ -6,7 +6,6 @@ import { getTags } from 'store/reducers/tags';
 
 import MobileLayout from 'containers/MobileLayout';
 
-import Footer from 'components/Footer';
 import Slider from 'components/Slider';
 import TagList from 'components/TagList';
 
@@ -23,8 +22,6 @@ const Home: React.FC = () => {
       <TagList />
 
       <Slider />
-
-      <Footer />
     </MobileLayout>
   );
 };
