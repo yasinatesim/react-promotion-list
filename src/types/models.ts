@@ -3,6 +3,7 @@ export type Tag = {
   Id: number;
   Name: string;
   Rank: number;
+  Active: boolean;
 };
 
 export type Promotion = {

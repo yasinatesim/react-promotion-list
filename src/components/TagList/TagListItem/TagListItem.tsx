@@ -8,15 +8,14 @@ import style from './TagListItem.module.scss';
 
 type Props = {
   tag: Tag;
-  activeTag: number;
 };
 
-const TagList: React.FC<Props> = ({ tag, activeTag }) => {
+const TagList: React.FC<Props> = ({ tag }) => {
   if (typeof tag.IconUrl === 'object') {
     return (
       <div
         className={cx(style.container, {
-          [style.active]: activeTag === tag.Id,
+          [style.active]: tag.Active,
         })}
       >
         <div className={style.all}>
@@ -31,7 +30,7 @@ const TagList: React.FC<Props> = ({ tag, activeTag }) => {
   return (
     <div
       className={cx(style.container, {
-        [style.active]: activeTag === tag.Id,
+        [style.active]: tag.Active,
       })}
     >
       <img width={24} height={24} src={tag.IconUrl as string} alt={tag.Name} />

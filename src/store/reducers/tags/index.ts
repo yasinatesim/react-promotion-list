@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import { getTagListService } from 'services/tag';
 
-import { getTagListAction } from './actions';
+import { getTagListAction, setActiveTagAction } from './actions';
 import initialState from './initialState';
 
 export const tagsSlice = createSlice({
@@ -10,6 +10,7 @@ export const tagsSlice = createSlice({
   name: 'tags',
   reducers: {
     getTagList: getTagListAction,
+    setActiveTag: setActiveTagAction,
   },
 });
 
@@ -22,6 +23,12 @@ export const getTags = () => async (dispatch: Function) => {
   }
 };
 
-export const { getTagList } = tagsSlice.actions;
+export const updateActiveTag =
+  ({ activeTag }: { activeTag: number }) =>
+  (dispatch: Function) => {
+    dispatch(setActiveTag({ activeTag }));
+  };
+
+export const { getTagList, setActiveTag } = tagsSlice.actions;
 
 export default tagsSlice.reducer;
