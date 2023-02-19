@@ -1,6 +1,6 @@
 <h3 align="center">
   <br>
-  <a href="https://github.com/yasinatesim/react-link-list"><img src="https://yasinates.com/tech/react.svg" alt="React Promotion List App" width="200"></a>
+  <a href="https://github.com/yasinatesim/react-promotion-list"><img src="https://yasinates.com/tech/react.svg" alt="React Promotion List App" width="200"></a>
   <br>
   React Promotion App
   <br>

@@ -18,7 +18,6 @@ export const getPromotions =
   async (dispatch: Function) => {
     try {
       const response = await getPromotionListService({ tagId: tagId || null });
-      console.log("response:", response)
       dispatch(getPromotionList(response));
     } catch (err) {
       throw new Error(err as string);

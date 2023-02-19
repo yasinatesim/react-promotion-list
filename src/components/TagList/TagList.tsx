@@ -1,5 +1,5 @@
 import { IconSearch } from 'assets/Icons';
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import useTags from 'store/hooks/useTags';
@@ -16,6 +16,8 @@ const TagList: React.FC = () => {
   const dispatch = useDispatch();
   const tagsState = useTags();
 
+  const [activeTag, setActiveTag] = useState<number>(ALL_TAG_ID);
+
   const tags = [
     {
       IconUrl: <IconSearch />,
@@ -27,6 +29,12 @@ const TagList: React.FC = () => {
   ];
 
   const handleClickTag = (id: number) => {
+    setActiveTag(id);
+
+    if (activeTag === id) {
+      return;
+    }
+
     dispatch(
       getPromotions({
         tagId: ALL_TAG_ID === id ? null : String(id),
@@ -38,7 +46,7 @@ const TagList: React.FC = () => {
     <div className={style.container}>
       {tags.map((tag: Tag, index: number) => (
         <div onClick={() => handleClickTag(tag.Id)} key={`${tag.Id}_${index}`}>
-          <TagListItem tag={tag} />
+          <TagListItem tag={tag} activeTag={activeTag} />
         </div>
       ))}
     </div>
