@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+}
+
+.brandImage {
+  position: absolute;
+  bottom: 10px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 15vw;
+  left: 10px;
+  width: 15vw;
+  padding: 6px;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.image {
+  border-bottom-left-radius: 100px;
+  height: auto;
+  width: 100%;
+}
+
+.date {
+  background: var(--color-code-black);
+  border-radius: 25px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--color-code-white);
+  position: absolute;
+  padding: 8px;
+  right: 2%;
+  bottom: 5%;
+}

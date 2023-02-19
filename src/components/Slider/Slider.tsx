@@ -1,3 +1,4 @@
+import { handleFullFilledTitle } from 'helpers/text';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,14 +10,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import useCardTitle from 'hooks/useCardTitle';
-
 import style from './Slider.module.scss';
 
 const Slider: React.FC = () => {
   const promotions = usePromotions();
-
-  const { handleFullFilledTitle } = useCardTitle();
 
   return (
     <div className={style.container}>

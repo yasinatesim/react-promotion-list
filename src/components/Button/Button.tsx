@@ -10,7 +10,7 @@ type Classnames = {
 type Props = {
   classnames?: Classnames;
   htmlType?: 'button' | 'submit' | 'reset' | undefined;
-  size?: 'medium';
+  size?: 'medium' | 'large';
   shape?: 'circle';
   type?: 'primary' | 'secondary';
   width?: number | string;
