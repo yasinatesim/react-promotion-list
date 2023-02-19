@@ -24,7 +24,7 @@
     "lint": "eslint . --fix && stylelint src/**/*.scss --fix",
     "lint:css": "stylelint ./src/**/*.scss",
     "lint:ts": "tsc",
-    "format": "prettier ./src/**/*.{ts?x,scss} --write",
+    "format": "prettier ./src/**/*.{ts,tsx,scss} --write",
     "prepare": "husky install",
     "setup": "yarn && docker-compose up --build"
   },
