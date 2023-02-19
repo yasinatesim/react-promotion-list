@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import usePromotions from 'store/hooks/usePromotions';
 
@@ -15,6 +15,28 @@ import SliderItem from './components/SliderItem';
 const Slider: React.FC = () => {
   const promotions = usePromotions();
 
+  const handleChangePaginationColor = ({ activeIndex }: { activeIndex: number }) => {
+    const pagination = document.querySelectorAll('.swiper-pagination-bullet') as NodeListOf<HTMLElement>;
+    const paginationActive = document.querySelector('.swiper-pagination-bullet-active') as HTMLElement;
+    if (pagination) {
+      pagination.forEach((item) => {
+        if (item.getAttribute('style')) {
+          item.removeAttribute('style');
+        }
+      });
+    }
+
+    if (paginationActive) {
+      paginationActive.style.backgroundColor = promotions[activeIndex].PromotionCardColor;
+    }
+  };
+
+  useEffect(() => {
+    if (promotions.length) {
+      handleChangePaginationColor({ activeIndex: 0 });
+    }
+  }, []);
+
   return (
     <div className={style.container}>
       <Swiper
@@ -26,6 +48,9 @@ const Slider: React.FC = () => {
         }}
         modules={[Pagination]}
         className={style.slider}
+        onSlideChange={(swiper) => {
+          handleChangePaginationColor({ activeIndex: swiper.activeIndex });
+        }}
       >
         {promotions.map((promotion) => (
           <SwiperSlide key={promotion.Id}>
