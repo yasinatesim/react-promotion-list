@@ -29,6 +29,14 @@ const TagList: React.FC = () => {
     ...tagsState,
   ];
 
+  const handleToggleLoader = (isActive: boolean) => {
+    const loader = document.querySelector<any>('#loader');
+
+    if (loader) {
+      loader.style.display = isActive ? 'flex' : 'none';
+    }
+  };
+
   const handleClickTag = (id: number) => {
     setActiveTag(id);
 
@@ -36,7 +44,13 @@ const TagList: React.FC = () => {
       return;
     }
 
-    const { swiper } = document.querySelector<any>('#swiper');
+    handleToggleLoader(true);
+
+    setTimeout(() => {
+      handleToggleLoader(false);
+    }, 1000);
+
+    const { swiper } = document.querySelector<any>('#slider');
 
     if (swiper) {
       swiper.slideTo(0);

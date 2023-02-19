@@ -40,7 +40,7 @@ const Slider: React.FC = () => {
   return (
     <div className={style.container}>
       <Swiper
-        id="swiper"
+        id="slider"
         slidesPerView="auto"
         autoHeight
         centeredSlides
