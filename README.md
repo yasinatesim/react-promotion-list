@@ -46,6 +46,10 @@ This project was created to create a medium/large React project with React + CSS
 </td>
 <td>Send commit messages to <a  href="https://www.conventionalcommits.org/en/v1.0.0/">conventional commits</a> rules</td>
 </tr>
+ <tr>
+    <td><a href="https://www.typescriptlang.org/">TypeScript</a></td>
+    <td>TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.</td>
+  </tr>
 <tr>
 <td>
 <a href="https://sass-lang.com/](https://sass-lang.com/">SASS</a>
