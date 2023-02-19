@@ -23,9 +23,9 @@ This project was created to create a medium/large React project with React + CSS
 <table>
 <tr>
 <td>
-<a  href="https://github.com/airbnb/javascript">Airbnb</a>
+<a  href="https://swiperjs.com/react">Swiper</a>
 </td>
-<td>Which is often a reasonable approach to JavaScript</td>
+<td>The Most Modern Mobile Touch Slider</td>
 </tr>
 <tr>
 <td>
@@ -94,13 +94,15 @@ git clone https://github.com/yasinatesim/react-promotion-list.git
 cd react-promotion-list
 ```
 
- 3. Install the project dependencies
+ 3. Rename `.env.example` file to `.env.development.local`
+
+ 4. Install the project dependencies
 
 ```bash
 yarn install
 ```
 
-4. Develop awesome things
+5. Develop awesome things
 
 ```bash
 yarn start
@@ -114,7 +116,10 @@ yarn start
 cd react-promotion-list
 ```
 
-3. Run this command **without `yarn` or `yarn install`**
+
+ 3. Rename `.env.example` file to `.env.development.local`
+
+4. Run this command **without `yarn` or `yarn install`**
 
 ```bash
 yarn setup
@@ -136,6 +141,11 @@ yarn build
 **For Lint**
 ```bash
 yarn lint
+```
+
+**For Format**
+```bash
+yarn format
 ```
 
 ## 🔑 License
