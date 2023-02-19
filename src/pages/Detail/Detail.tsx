@@ -1,5 +1,4 @@
 import { IconLeftArrow } from 'assets/Icons';
-import { handleFullFilledTitle } from 'helpers/text';
 
 import React, { useEffect, useState } from 'react';
 
@@ -15,10 +14,13 @@ import { getPromotionDetailService } from 'services/promotion';
 
 import { Detail as DetailType } from 'types/models';
 
+import { useText } from 'hooks';
+
 import style from './Detail.module.scss';
 
 const Detail: React.FC = () => {
   const params: { id: string; seoName: string } = useParams();
+  const { handleFullFilledTitle } = useText();
   const [data, setData] = useState<null | DetailType>(null);
 
   useEffect(() => {

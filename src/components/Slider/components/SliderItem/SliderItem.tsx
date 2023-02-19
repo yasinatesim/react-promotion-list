@@ -1,10 +1,11 @@
-import { handleFullFilledTitle } from 'helpers/text';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Image from 'components/Image';
 
 import { Promotion } from 'types/models';
+
+import { useText } from 'hooks';
 
 import style from './SliderItem.module.scss';
 
@@ -13,6 +14,8 @@ type Props = {
 };
 
 const SliderItem: React.FC<Props> = ({ data }) => {
+  const { handleFullFilledTitle } = useText();
+
   return (
     <Link to={`/campaign/${data.SeoName}/${data.Id}`} className={style.container}>
       <div className={style.sliderImageWrapper}>

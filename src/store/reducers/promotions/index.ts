@@ -2,14 +2,14 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import { getPromotionListService } from 'services/promotion';
 
-import { getPromotionListAction } from './actions';
+import { getPromotionsListAction } from './actions';
 import initialState from './initialState';
 
 export const promotionsSlice = createSlice({
   initialState,
   name: 'promotions',
   reducers: {
-    getPromotionList: getPromotionListAction,
+    getPromotionList: getPromotionsListAction,
   },
 });
 
