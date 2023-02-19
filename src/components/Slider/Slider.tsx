@@ -35,13 +35,14 @@ const Slider: React.FC = () => {
     if (promotions.length) {
       handleChangePaginationColor({ activeIndex: 0 });
     }
-  }, []);
+  }, [promotions]);
 
   return (
     <div className={style.container}>
       <Swiper
         slidesPerView="auto"
         autoHeight
+        centeredSlides
         spaceBetween={10}
         pagination={{
           clickable: true,
