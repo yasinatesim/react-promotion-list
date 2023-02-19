@@ -1,22 +1,14 @@
-$item-width: 42vw;
-$item-height: 50vh;
-
 .container {
   margin-top: 20px;
 
   :global(.swiper-wrapper) {
-    height: 110vw;
     position: relative;
     width: 100%;
   }
 
   :global(.swiper-slide) {
     width: initial;
-    min-height: 58vh;
-  }
-
-  :global(.swiper-pagination-bullets) {
-    margin-top: 22px;
+    min-height: 50vh;
   }
 
   :global(.swiper-pagination-bullet) {
@@ -28,7 +20,7 @@ $item-height: 50vh;
   }
 
   :global(.swiper-pagination-bullet-active) {
-    background-color: red;
+    background-color: var(--color-code-red);
     border-radius: 10px;
     width: 19px;
   }
