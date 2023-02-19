@@ -1,1 +1,1 @@
-export type PromotionsState = []
+export type PromotionsState = [];

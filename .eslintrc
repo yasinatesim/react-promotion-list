@@ -112,14 +112,7 @@
     "@typescript-eslint/naming-convention": ["off"],
     "func-names": ["off"],
     "no-console": ["off"],
-    "promise/catch-or-return": "error"
-  },
-  "overrides": [
-    {
-      "files": ["**/*.stories.*"],
-      "rules": {
-        "import/no-anonymous-default-export": "off"
-      }
-    }
-  ]
+    "promise/catch-or-return": "error",
+    "react/no-danger": ["off"]
+  }
 }

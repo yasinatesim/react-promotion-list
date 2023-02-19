@@ -1,1 +1,1 @@
-export { default as getPromotionListAction } from './getPromotionListAction'
+export { default as getPromotionListAction } from './getPromotionListAction';

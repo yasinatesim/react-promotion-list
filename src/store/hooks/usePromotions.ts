@@ -1,7 +1,7 @@
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux';
 
-import { getPromotionState } from '../selectors'
+import { getPromotionState } from '../selectors';
 
-const usePromotions = () => useSelector(getPromotionState)
+const usePromotions = () => useSelector(getPromotionState);
 
-export default usePromotions
+export default usePromotions;

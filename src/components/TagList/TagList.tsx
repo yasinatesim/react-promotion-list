@@ -1,13 +1,12 @@
+import { IconSearch } from 'assets/Icons';
 import React from 'react';
-
-import { Tag } from 'types/models';
 
 import useTags from 'store/hooks/useTags';
 
-import TagListItem from './TagListItem';
+import { Tag } from 'types/models';
 
 import style from './TagList.module.scss';
-import { IconSearch } from 'assets/Icons';
+import TagListItem from './TagListItem';
 
 const TagList: React.FC = () => {
   const tagsState = useTags();

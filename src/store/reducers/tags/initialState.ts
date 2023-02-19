@@ -1,5 +1,5 @@
-import { TagsState } from './types'
+import { TagsState } from './types';
 
-const initialState: TagsState = []
+const initialState: TagsState = [];
 
-export default initialState
+export default initialState;

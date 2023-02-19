@@ -4,7 +4,6 @@ $item-height: 50vh;
 .container {
   margin-top: 20px;
 
-
   :global(.swiper-wrapper) {
     height: 110vw;
     position: relative;
@@ -110,7 +109,6 @@ $item-height: 50vh;
 }
 
 .promotionText {
-
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -120,7 +118,8 @@ $item-height: 50vh;
   margin-top: 10px;
   margin-bottom: 10px;
 
-p, span {
+  p,
+  span {
     display: block;
     width: 100%;
   }

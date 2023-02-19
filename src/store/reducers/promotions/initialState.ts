@@ -1,5 +1,5 @@
-import { PromotionsState } from './types'
+import { PromotionsState } from './types';
 
-const initialState: PromotionsState = []
+const initialState: PromotionsState = [];
 
-export default initialState
+export default initialState;

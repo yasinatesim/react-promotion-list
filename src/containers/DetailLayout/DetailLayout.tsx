@@ -1,5 +1,6 @@
-import Button from 'components/Button';
 import React from 'react';
+
+import Button from 'components/Button';
 
 import style from './DetailLayout.module.scss';
 
@@ -13,7 +14,7 @@ const DetailLayout: React.FC<Props> = ({ children }) => {
       {children}
 
       <div className={style.footer}>
-        <Button width={"100%"}>Hemen Katıl</Button>
+        <Button width="100%">Hemen Katıl</Button>
       </div>
     </div>
   );

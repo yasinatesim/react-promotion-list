@@ -1,24 +1,22 @@
-import cx from 'classnames'
-import React from 'react'
+import cx from 'classnames';
+import React from 'react';
 
-import css from './Button.module.scss'
+import css from './Button.module.scss';
 
 type Classnames = {
-  container?: string
-}
+  container?: string;
+};
 
 type Props = {
-  classnames?: Classnames
-  htmlType?: 'button' | 'submit' | 'reset' | undefined
-  size?: 'medium'
-  shape?: 'circle'
-  type?: 'primary' | 'secondary'
-  width?: number | string
-}
+  classnames?: Classnames;
+  htmlType?: 'button' | 'submit' | 'reset' | undefined;
+  size?: 'medium';
+  shape?: 'circle';
+  type?: 'primary' | 'secondary';
+  width?: number | string;
+};
 
-const Button: React.FC<
-  Props & Omit<React.HTMLProps<HTMLButtonElement>, 'size'>
-> = ({
+const Button: React.FC<Props & Omit<React.HTMLProps<HTMLButtonElement>, 'size'>> = ({
   children,
   classnames,
   size = 'medium',
@@ -30,14 +28,8 @@ const Button: React.FC<
   ...props
 }) => {
   const cn: Classnames = {
-    container: cx(
-      css.container,
-      css[type],
-      css[size],
-      shape && css[shape],
-      classnames?.container
-    )
-  }
+    container: cx(css.container, css[type], css[size], shape && css[shape], classnames?.container),
+  };
 
   return (
     <button
@@ -49,10 +41,9 @@ const Button: React.FC<
       }}
       {...props}
     >
-
       {children}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

@@ -16,6 +16,6 @@ const Routes: React.FC<RouteProps & Props> = ({ children }) => {
       <Switch>{children || routeMap}</Switch>
     </Router>
   );
-}
+};
 
 export default Routes;

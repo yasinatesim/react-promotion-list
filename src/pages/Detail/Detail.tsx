@@ -1,12 +1,13 @@
 // @ts-nocheck
+import { handleFullFilledTitle } from 'helpers/text';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import DetailLayout from 'containers/DetailLayout';
 
 import { getPromotionDetailService } from 'services/promotion';
+
 import useCardTitle from 'hooks/useCardTitle';
-import { handleFullFilledTitle } from 'helpers/text';
 
 const Detail: React.FC = () => {
   const params = useParams();

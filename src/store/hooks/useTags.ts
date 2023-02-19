@@ -1,7 +1,7 @@
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux';
 
-import { getTagState } from '../selectors'
+import { getTagState } from '../selectors';
 
-const useTags = () => useSelector(getTagState)
+const useTags = () => useSelector(getTagState);
 
-export default useTags
+export default useTags;

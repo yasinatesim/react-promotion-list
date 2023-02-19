@@ -1,1 +1,1 @@
-export { default as getTagListAction } from './getTagListAction'
+export { default as getTagListAction } from './getTagListAction';

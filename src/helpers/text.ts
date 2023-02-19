@@ -1,12 +1,10 @@
 export const handleFullFilledTitle = (title: string) => {
-
-  const regex = />-</g
-  const found = title.match(regex)
+  const regex = />-</g;
+  const found = title.match(regex);
 
   if (found) {
-    return false
+    return false;
   }
 
-  return title
-
-}
+  return title;
+};

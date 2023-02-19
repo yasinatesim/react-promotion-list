@@ -1,6 +1,5 @@
-import React from 'react';
-
 import { ImageLogo as Logo } from 'assets/Images';
+import React from 'react';
 
 import Account from 'components/Account';
 

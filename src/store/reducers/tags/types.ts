@@ -1,1 +1,1 @@
-export type TagsState = []
+export type TagsState = [];
