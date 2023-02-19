@@ -1,4 +1,5 @@
 import { IconSearch } from 'assets/Icons';
+
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
@@ -33,6 +34,12 @@ const TagList: React.FC = () => {
 
     if (activeTag === id) {
       return;
+    }
+
+    const { swiper } = document.querySelector<any>('#swiper');
+
+    if (swiper) {
+      swiper.slideTo(0);
     }
 
     dispatch(
