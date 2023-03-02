@@ -65,7 +65,7 @@ const Detail: React.FC = () => {
         color={data.BrandIconColor}
         icon={data.BrandIconUrl}
         name={data.SeoName}
-        date={data.EndDate}
+        date={data.RemainingText}
         style={{
           borderBottomLeftRadius: 100,
         }}

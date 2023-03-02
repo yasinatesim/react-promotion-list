@@ -1,0 +1,73 @@
+{
+  "year": {
+    "past": {
+      "one": "{0} yıl geçti",
+      "other": "{0} yıl geçti"
+    },
+    "future": {
+      "one": "son {0} yıl",
+      "other": "son {0} yıl"
+    }
+  },
+  "month": {
+    "past": {
+      "one": "{0} ay geçti",
+      "other": "{0} ay geçti"
+    },
+    "future": {
+      "one": "son {0} ay",
+      "other": "son {0} ay"
+    }
+  },
+
+  "week": {
+    "past": {
+      "one": "{0} hafta geçti",
+      "other": "{0} hafta geçti"
+    },
+    "future": {
+      "one": "son {0} hafta",
+      "other": "son {0} hafta"
+    }
+  },
+  "day": {
+    "past": {
+      "one": "{0} gün geçti",
+      "other": "{0} gün geçti"
+    },
+    "future": {
+      "one": "son {0} gün",
+      "other": "son {0} gün"
+    }
+  },
+  "hour": {
+    "past": {
+      "one": "{0} saat geçti",
+      "other": "{0} saat geçti"
+    },
+    "future": {
+      "one": "son {0} saat",
+      "other": "son {0} saat"
+    }
+  },
+  "minute": {
+    "past": {
+      "one": "{0} dakika geçti",
+      "other": "{0} dakika geçti"
+    },
+    "future": {
+      "one": "son {0} dakika",
+      "other": "son {0} dakika"
+    }
+  },
+  "second": {
+    "past": {
+      "one": "{0} saniye geçti",
+      "other": "{0} saniye geçti"
+    },
+    "future": {
+      "one": "son {0} saniye",
+      "other": "son {0} saniye"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.modal {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.2s ease-out;
+  width: 100vw;
+  z-index: 255;
+}
+
+.popup {
+  background-color: #fff;
+  border-radius: 20px;
+  flex-direction: column;
+  padding:  12px;
+  position: relative;
+  width: 86%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

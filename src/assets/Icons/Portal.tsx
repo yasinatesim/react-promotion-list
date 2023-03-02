@@ -1,115 +1,133 @@
 import { SVGProps } from 'react';
 
 const IconPortal = (props: SVGProps<SVGSVGElement>) => (
-  <svg width={39} height={40} fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <mask
-      id="a"
-      style={{
-        maskType: 'luminance',
-      }}
-      maskUnits="userSpaceOnUse"
-      x={12}
-      y={24}
-      width={15}
-      height={16}
-    >
-      <path fillRule="evenodd" clipRule="evenodd" d="M12.008 24.874h14.8v14.8h-14.8v-14.8Z" fill="#fff" />
-    </mask>
-    <g mask="url(#a)">
+  <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <g filter="url(#filter0_i_2160_17)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M19.408 36.883c2.727 0 4.609-1.776 4.609-4.334v-4.884h-9.218v4.884c0 2.558 1.882 4.334 4.61 4.334m0 2.79c-4.166 0-7.4-3.044-7.4-7.124v-7.675h14.799v7.675c0 4.08-3.235 7.124-7.4 7.124"
-        fill="#1D1D1B"
+        d="M19.5008 40C23.4086 40 26.1045 37.3899 26.1045 33.6306L26.1045 26.4532L12.8965 26.4532L12.8965 33.6306C12.8965 37.3899 15.5925 40 19.5008 40"
+        fill="#F1DE02"
       />
     </g>
-    <mask
-      id="b"
-      style={{
-        maskType: 'luminance',
-      }}
-      maskUnits="userSpaceOnUse"
-      x={12}
-      y={0}
-      width={15}
-      height={16}
-    >
-      <path fillRule="evenodd" clipRule="evenodd" d="M12.008.984h14.8v14.672h-14.8V.984Z" fill="#fff" />
-    </mask>
-    <g mask="url(#b)">
+    <g filter="url(#filter1_i_2160_17)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M19.408 3.775c-2.727 0-4.609 1.776-4.609 4.334v4.757h9.218V8.109c0-2.558-1.882-4.334-4.61-4.334m0-2.79c4.166 0 7.4 3.044 7.4 7.124v7.547H12.009V8.11c0-4.08 3.235-7.125 7.4-7.125"
-        fill="#1D1D1B"
+        d="M7.70294e-06 20.0005C7.67042e-06 24.0085 2.54471 26.7735 6.21002 26.7735L13.026 26.7735L13.026 13.2268L6.21002 13.2268C2.54471 13.2268 7.73547e-06 15.9919 7.70294e-06 20.0005Z"
+        fill="#009639"
       />
     </g>
-    <mask
-      id="c"
-      style={{
-        maskType: 'luminance',
-      }}
-      maskUnits="userSpaceOnUse"
-      x={0}
-      y={12}
-      width={15}
-      height={16}
-    >
-      <path fillRule="evenodd" clipRule="evenodd" d="M0 12.866h14.8v14.799H0v-14.8Z" fill="#fff" />
-    </mask>
-    <g mask="url(#c)">
+    <g filter="url(#filter2_i_2160_17)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M2.79 20.265c0 2.728 1.777 4.61 4.335 4.61h4.883v-9.219H7.125c-2.558 0-4.334 1.882-4.334 4.61m-2.791 0c0-4.166 3.044-7.4 7.125-7.4h7.674v14.799H7.125c-4.08 0-7.125-3.235-7.125-7.4"
-        fill="#1D1D1B"
+        d="M19.5001 -2.02918e-05C15.5923 -1.99414e-05 12.8965 2.60995 12.8965 6.36927L12.8965 13.5468L26.1045 13.5468L26.1045 6.36927C26.1045 2.60995 23.4085 -2.06423e-05 19.5001 -2.02918e-05"
+        fill="#FF8300"
       />
     </g>
-    <mask
-      id="d"
-      style={{
-        maskType: 'luminance',
-      }}
-      maskUnits="userSpaceOnUse"
-      x={24}
-      y={12}
-      width={15}
-      height={16}
-    >
-      <path fillRule="evenodd" clipRule="evenodd" d="M24.017 12.866h14.8v14.799h-14.8v-14.8Z" fill="#fff" />
-    </mask>
-    <g mask="url(#d)">
+    <g filter="url(#filter3_i_2160_17)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M36.026 20.265c0-2.727-1.777-4.609-4.335-4.609h-4.883v9.218h4.884c2.557 0 4.334-1.881 4.334-4.609m2.79 0c0 4.165-3.044 7.4-7.125 7.4h-7.674v-14.8h7.675c4.08 0 7.124 3.235 7.124 7.4"
-        fill="#1D1D1B"
+        d="M39 19.9998C39 15.9919 36.4553 13.2268 32.79 13.2268L25.792 13.2268L25.792 26.7736L32.79 26.7736C36.4553 26.7736 39 24.0084 39 19.9998Z"
+        fill="#F40000"
       />
     </g>
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M36.026 20.265c0-2.727-1.777-4.609-4.335-4.609h-4.883v9.218h4.884c2.557 0 4.334-1.881 4.334-4.609"
-      fill="#F1DE02"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M19.408 3.775c-2.727 0-4.609 1.776-4.609 4.334v4.757h9.218V8.109c0-2.558-1.882-4.334-4.61-4.334"
-      fill="#009639"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M19.408 36.883c2.727 0 4.609-1.776 4.609-4.334v-4.884h-9.218v4.884c0 2.558 1.882 4.334 4.61 4.334"
-      fill="#FF8300"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M2.79 20.265c0 2.728 1.777 4.61 4.335 4.61h4.883v-9.219H7.125c-2.558 0-4.334 1.882-4.334 4.61"
-      fill="#F40000"
-    />
+    <defs>
+      <filter
+        id="filter0_i_2160_17"
+        x="12.8965"
+        y="26.4532"
+        width="13.208"
+        height="17.5468"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2160_17" />
+      </filter>
+      <filter
+        id="filter1_i_2160_17"
+        x="0"
+        y="13.2268"
+        width="13.026"
+        height="17.5468"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2160_17" />
+      </filter>
+      <filter
+        id="filter2_i_2160_17"
+        x="12.8965"
+        y="0"
+        width="13.208"
+        height="17.5468"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2160_17" />
+      </filter>
+      <filter
+        id="filter3_i_2160_17"
+        x="25.792"
+        y="13.2268"
+        width="13.208"
+        height="17.5468"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dy="4" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2160_17" />
+      </filter>
+    </defs>
   </svg>
 );
 

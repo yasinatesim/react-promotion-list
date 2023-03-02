@@ -1,7 +1,5 @@
 import React from 'react';
 
-import useTimeAgo from 'hooks/useTimeAgo';
-
 import css from './Image.module.scss';
 
 type Props = {
@@ -23,7 +21,8 @@ const Image: React.FC<Props> = ({
   style,
   isBackgroundImage = false,
 }) => {
-  const formattedDate = (date && useTimeAgo(date)) || null;
+  // const formattedDate = (date && useTimeAgo(date)) || null;
+  const formattedDate = date || null;
 
   return (
     <div className={css.container}>
