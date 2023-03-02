@@ -45,3 +45,8 @@ export type Detail = {
   PromotionDetailItemAreas: any; // TODO: implement this type
   NextFlowConfigurations: {};
 };
+
+export type ModalState = {
+  type: string;
+  props: Record<string, string>;
+};

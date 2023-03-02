@@ -6,6 +6,8 @@ import Routes from 'routes';
 
 import DesktopLayout from 'containers/DesktopLayout';
 
+import Modal from 'components/Modal';
+
 import { store } from './store';
 
 import 'assets/styles/app.scss';
@@ -18,6 +20,8 @@ function App() {
   return (
     <Provider store={store}>
       <Routes />
+
+      <Modal />
     </Provider>
   );
 }
