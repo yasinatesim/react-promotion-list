@@ -1,4 +1,6 @@
+import { IconX } from 'assets/Icons';
 import React from 'react';
+
 import { useDispatch } from 'react-redux';
 import useModal from 'store/hooks/useModal';
 
@@ -7,16 +9,20 @@ import { handleCloseModal } from 'store/reducers/modal';
 import css from './Modal.module.scss';
 import modalTypes from './types';
 
-type PopupProps = {
+type ModalProps = {
   children: React.ReactNode;
-  onClick: () => void;
 };
 
-const Dialog: React.FC<PopupProps> = ({ children }) => {
+const Dialog: React.FC<ModalProps> = ({ children }) => {
+  const dispatch = useDispatch();
+
   return (
-    <div className={css.modal}>
-      <div className={css.popup}>{children}</div>
-      {/* <ClickAwayListener onClickAway={onClick}>{children}</ClickAwayListener> */}
+    <div className={css.dialog}>
+      <div className={css.modal} onClick={() => dispatch(handleCloseModal() as any)}>
+        <div className={css.popup} onClick={(e) => e.stopPropagation()}>
+          {children}
+        </div>
+      </div>
     </div>
   );
 };
@@ -41,7 +47,7 @@ const Container = () => {
 
   const closeButton = (
     <div onClick={handleClose} className={css.close}>
-      {/* <IconX /> */}
+      <IconX />
     </div>
   );
 
@@ -50,7 +56,7 @@ const Container = () => {
   }
 
   return (
-    <Dialog onClick={handleClose} {...modal.props}>
+    <Dialog {...modal.props}>
       <Component closeButton={closeButton} {...modal.props} />
     </Dialog>
   );

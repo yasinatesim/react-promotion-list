@@ -1,10 +1,10 @@
 import { PayloadAction } from '@reduxjs/toolkit';
 
-import { CLOSE_MODAL } from './constants';
+import { MODAL_NONE } from 'components/Modal/constants';
 
 export const closeModalAction = (_state: any, _action: PayloadAction<any>): any => {
   return {
-    type: CLOSE_MODAL,
+    type: MODAL_NONE,
   };
 };
 
