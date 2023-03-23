@@ -1,15 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 
 const getBaseHeaders = (headers: any = {}) => {
-  const authToken = localStorage.getItem('token');
-
-  if (authToken) {
-    return {
-      ...headers,
-      'X-Auth-Token': authToken,
-    };
-  }
-
   return headers;
 };
 
