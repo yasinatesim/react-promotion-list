@@ -34,15 +34,15 @@ const SliderItem: React.FC<Props> = ({ data }) => {
       </div>
 
       {handleFullFilledTitle(data.Title) && (
-        <div className={css.title} dangerouslySetInnerHTML={{ __html: data.Title }} />
+        <div className={css.title} dangerouslySetInnerHTML={{ __html: handleFullFilledTitle(data.Title) }} />
       )}
 
       <div className={css.slideCardColor} style={{ backgroundColor: data.PromotionCardColor }} />
 
-      {handleFullFilledTitle(data.Title) && (
+      {handleFullFilledTitle(data.Title) && handleFullFilledTitle(data.BrandPromotionCardParticipationText) && (
         <div
           className={css.promotionText}
-          dangerouslySetInnerHTML={{ __html: data.BrandPromotionCardParticipationText }}
+          dangerouslySetInnerHTML={{ __html: handleFullFilledTitle(data.BrandPromotionCardParticipationText) }}
         />
       )}
     </Link>

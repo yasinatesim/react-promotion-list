@@ -11,6 +11,10 @@
   <p align="center">
     · <a href="https://react-promotion-list.yasinatesim.vercel.app/">View Demo</a>
   </p>
+
+  <p align="center">
+    · <a href="https://www.figma.com/file/TtGId6HF4Dr4XX1KakY5nn/React-Promotion-List-App?type=design&t=w0DwNW5OJMntI8kB-6">View Figma Design</a>
+  </p>
 </p>
 
 ## 📖 About
