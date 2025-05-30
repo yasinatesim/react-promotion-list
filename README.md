@@ -9,7 +9,7 @@
 <p align="center">This project was created to create a medium/large React project with React + CSS Module, React Router, Redux and Docker 😎</p>
 
   <p align="center">
-    · <a href="https://react-promotion-list.yasinatesim.vercel.app/">View Demo</a>
+    · <a href="https://react-promotion-list.yasinates.com/">View Demo</a>
     · <a href="https://www.figma.com/file/TtGId6HF4Dr4XX1KakY5nn/React-Promotion-List-App?type=design&t=w0DwNW5OJMntI8kB-6">View Figma Design</a>
   </p>
 </p>
